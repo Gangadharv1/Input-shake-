@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #3908db, #e9403c);
+}
+
+.center-container {
+  text-align: center;
+}
+
+.input {
+  color: dimgray;
+  padding: 10px;
+  border: 1px solid dimgray; 
+  border-radius: 10px; 
+}
+
+.input:invalid {
+  animation: justshake 0.35s forwards;
+  color: red;
+}
+
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
